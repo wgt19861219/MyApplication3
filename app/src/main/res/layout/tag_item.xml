@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+>
+
+    <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="244px"
+            android:layout_height="120px"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_rect_round_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="电子商务"
+            android:textSize="18sp"
+    />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <com.example.wgt1986.myapplication.ExpandableGridView
+            android:id="@+id/country_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:verticalSpacing="15dp"
+            android:horizontalSpacing="15dp"
+            android:columnWidth="80dp"
+            android:stretchMode="columnWidth"
+            android:numColumns="auto_fit">
+    </com.example.wgt1986.myapplication.ExpandableGridView>
+
+</RelativeLayout>
