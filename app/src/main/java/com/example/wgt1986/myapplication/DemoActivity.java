@@ -3,6 +3,8 @@ package com.example.wgt1986.myapplication;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import com.example.wgt1986.myapplication.widget.FlowTagLayout;
 import com.example.wgt1986.myapplication.widget.OnTagSelectListener;
@@ -18,6 +20,7 @@ public class DemoActivity extends AppCompatActivity {
 
     private FlowTagLayout mMobileFlowTagLayout;
     private TagAdapter<String> mMobileTagAdapter;
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class DemoActivity extends AppCompatActivity {
         }
 
         mMobileFlowTagLayout = (FlowTagLayout) findViewById(R.id.multi_select_flow_layout);
+        btn = (Button) findViewById(R.id.btn_add);
 
         //多选
         mMobileTagAdapter = new TagAdapter<>(this);
@@ -46,21 +50,27 @@ public class DemoActivity extends AppCompatActivity {
                         sb.append(parent.getAdapter().getItem(i));
                         sb.append(":");
                     }
-                    Toast.makeText(DemoActivity.this, "O(∩_∩)O哈哈哈~:" + sb.toString(), 0).show();
+                    Toast.makeText(DemoActivity.this, "" + sb.toString(), 0).show();
                 } else {
                     Toast.makeText(DemoActivity.this, "没有选择标签", 0).show();
                 }
             }
         });
 
-        initMobileData();
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mMobileFlowTagLayout.setVisibility(View.VISIBLE);
+                initMobileData();
+            }
+        });
     }
 
     private void initMobileData() {
         List<String> dataSource = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             dataSource.add("多选" + i);
-
 
         }
         mMobileTagAdapter.onlyAddAll(dataSource);

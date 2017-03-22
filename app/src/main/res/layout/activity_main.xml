@@ -5,6 +5,12 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
+    <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:text="add"
+            android:layout_height="wrap_content"/>
+
 
     <ScrollView
             android:layout_width="match_parent"
@@ -31,11 +37,11 @@
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
-
                 <com.example.wgt1986.myapplication.widget.FlowTagLayout
                         android:id="@+id/multi_select_flow_layout"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
             </LinearLayout>
 
         </LinearLayout>
