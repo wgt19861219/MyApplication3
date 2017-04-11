@@ -4,7 +4,6 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-
     <Button
             android:text="Button1"
             android:layout_width="match_parent"
@@ -21,4 +20,12 @@
             android:text="Button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/button4"/>
+    <Button
+            android:text="Button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button5"/>
+    <Button
+            android:text="Button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button6"/>
 </LinearLayout>

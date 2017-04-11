@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.wgt1986.myapplication">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -19,6 +21,9 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".FLMainActivity"/>
         <activity android:name=".listview.activities.ListMainActivity"/>
+        <activity android:name=".gridview.ui.GMainActivity" android:exported="true">
+        </activity>
+        <activity android:name=".SMainActivity"/>
     </application>
 
 </manifest>
