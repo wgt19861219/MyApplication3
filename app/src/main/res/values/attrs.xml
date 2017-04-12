@@ -27,51 +27,51 @@
 
     <attr name="gravity">
         <!-- Push object to the top of its container, not changing its size. -->
-        <flag name="top" value="0x30" />
+        <flag name="top" value="0x30"/>
         <!-- Push object to the bottom of its container, not changing its size. -->
-        <flag name="bottom" value="0x50" />
+        <flag name="bottom" value="0x50"/>
         <!-- Push object to the left of its container, not changing its size. -->
-        <flag name="left" value="0x03" />
+        <flag name="left" value="0x03"/>
         <!-- Push object to the right of its container, not changing its size. -->
-        <flag name="right" value="0x05" />
+        <flag name="right" value="0x05"/>
         <!-- Place object in the vertical center of its container, not changing its size. -->
-        <flag name="center_vertical" value="0x10" />
+        <flag name="center_vertical" value="0x10"/>
         <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
-        <flag name="fill_vertical" value="0x70" />
+        <flag name="fill_vertical" value="0x70"/>
         <!-- Place object in the horizontal center of its container, not changing its size. -->
-        <flag name="center_horizontal" value="0x01" />
+        <flag name="center_horizontal" value="0x01"/>
         <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
-        <flag name="fill_horizontal" value="0x07" />
+        <flag name="fill_horizontal" value="0x07"/>
         <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
-        <flag name="center" value="0x11" />
+        <flag name="center" value="0x11"/>
         <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
-        <flag name="fill" value="0x77" />
+        <flag name="fill" value="0x77"/>
         <!-- Additional option that can be set to have the top and/or bottom edges of
              the child clipped to its container's bounds.
              The clip will be based on the vertical gravity: a top gravity will clip the bottom
              edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
-        <flag name="clip_vertical" value="0x80" />
+        <flag name="clip_vertical" value="0x80"/>
         <!-- Additional option that can be set to have the left and/or right edges of
              the child clipped to its container's bounds.
              The clip will be based on the horizontal gravity: a left gravity will clip the right
              edge, a right gravity will clip the left edge, and neither will clip both edges. -->
-        <flag name="clip_horizontal" value="0x08" />
+        <flag name="clip_horizontal" value="0x08"/>
     </attr>
     <!-- Default GridView style. -->
-    <attr name="gridViewStyle" format="reference" />
+    <attr name="gridViewStyle" format="reference"/>
     <declare-styleable name="TwoWayAbsListView">
         <!-- Drawable used to indicate the currently selected item in the list. -->
-        <attr name="listSelector" format="color|reference" />
+        <attr name="listSelector" format="color|reference"/>
         <!-- When set to true, the selector will be drawn over the selected item.
              Otherwise the selector is drawn behind the selected item. The default
              value is false. -->
-        <attr name="drawSelectorOnTop" format="boolean" />
+        <attr name="drawSelectorOnTop" format="boolean"/>
         <!-- Used by ListView and GridView to stack their content from the bottom. -->
-        <attr name="stackFromBottom" format="boolean" />
+        <attr name="stackFromBottom" format="boolean"/>
         <!-- When set to true, the list uses a drawing cache during scrolling.
              This makes the rendering faster but uses more memory. The default
              value is true. -->
-        <attr name="scrollingCache" format="boolean" />
+        <attr name="scrollingCache" format="boolean"/>
         <!-- When set to true, the list will filter results as the user types. The
              List's adapter must support the Filterable interface for this to work. -->
         <!-- <attr name="textFilterEnabled" format="boolean" /> -->
@@ -83,14 +83,14 @@
             <!-- The list will automatically scroll to the bottom when
                  a data set change notification is received and only if the last item is
                  already visible on screen. -->
-            <enum name="normal" value="1" />
+            <enum name="normal" value="1"/>
             <!-- The list will automatically scroll to the bottom, no matter what items
                  are currently visible. -->
-            <enum name="alwaysScroll" value="2" />
+            <enum name="alwaysScroll" value="2"/>
         </attr>
         <!-- Indicates that this list will always be drawn on top of solid, single-color
              opaque background. This allows the list to optimize drawing. -->
-        <attr name="cacheColorHint" format="color" />
+        <attr name="cacheColorHint" format="color"/>
         <!-- Enables the fast scroll thumb that can be dragged to quickly scroll through
              the list. -->
         <!-- <attr name="fastScrollEnabled" format="boolean" /> -->
@@ -102,7 +102,7 @@
              change size as the user scrolls through the list. When set to fale, the list
              will use only the number of items in the adapter and the number of items visible
              on screen to determine the scrollbar's properties. -->
-        <attr name="smoothScrollbar" format="boolean" />
+        <attr name="smoothScrollbar" format="boolean"/>
 
         <!-- Use this attribute to control which direction the GridView scrolls when in
              portrait orientation -->
@@ -110,107 +110,124 @@
             <!-- Scroll up vertically. This is the default value. -->
             <enum name="vertical" value="0"/>
             <!-- Scroll horizontally. -->
-            <enum name="horizontal" value="1" />
+            <enum name="horizontal" value="1"/>
         </attr>
         <attr name="scrollDirectionLandscape">
             <!-- Scroll up vertically. This is the default value. -->
             <enum name="vertical" value="0"/>
             <!-- Scroll horizontally. -->
-            <enum name="horizontal" value="1" />
+            <enum name="horizontal" value="1"/>
         </attr>
     </declare-styleable>
 
     <declare-styleable name="TwoWayGridView">
-        <attr name="horizontalSpacing_g" format="dimension" />
-        <attr name="verticalSpacing_g" format="dimension" />
+        <attr name="horizontalSpacing_g" format="dimension"/>
+        <attr name="verticalSpacing_g" format="dimension"/>
         <attr name="stretchMode">
             <enum name="none" value="0"/>
-            <enum name="spacingWidth" value="1" />
-            <enum name="columnWidth" value="2" />
-            <enum name="spacingWidthUniform" value="3" />
+            <enum name="spacingWidth" value="1"/>
+            <enum name="columnWidth" value="2"/>
+            <enum name="spacingWidthUniform" value="3"/>
         </attr>
-        <attr name="columnWidth" format="dimension" />
-        <attr name="rowHeight" format="dimension" />
+        <attr name="columnWidth" format="dimension"/>
+        <attr name="rowHeight" format="dimension"/>
         <attr name="numColumns" format="integer" min="0">
-            <enum name="auto_fit" value="-1" />
+            <enum name="auto_fit" value="-1"/>
         </attr>
         <attr name="numRows" format="integer" min="0">
-            <enum name="auto_fit" value="-1" />
+            <enum name="auto_fit" value="-1"/>
         </attr>
-        <attr name="gravity" />
+        <attr name="gravity"/>
     </declare-styleable>
 
     <!-- These top three attributes are not accessible to library users -->
-    <attr name="md_divider" format="color" />
+    <attr name="md_divider" format="color"/>
 
     <!-- Accessible global theming attributes -->
-    <attr name="md_dark_theme" format="boolean" />
-    <attr name="md_background_color" format="color" />
+    <attr name="md_dark_theme" format="boolean"/>
+    <attr name="md_background_color" format="color"/>
 
-    <attr name="md_icon" format="reference" />
-    <attr name="md_icon_max_size" format="dimension" />
-    <attr name="md_icon_limit_icon_to_default_size" format="boolean" />
+    <attr name="md_icon" format="reference"/>
+    <attr name="md_icon_max_size" format="dimension"/>
+    <attr name="md_icon_limit_icon_to_default_size" format="boolean"/>
 
-    <attr name="md_title_color" format="color" />
-    <attr name="md_content_color" format="color" />
-    <attr name="md_link_color" format="color" />
+    <attr name="md_title_color" format="color"/>
+    <attr name="md_content_color" format="color"/>
+    <attr name="md_link_color" format="color"/>
 
-    <attr name="md_positive_color" format="color" />
-    <attr name="md_neutral_color" format="color" />
-    <attr name="md_negative_color" format="color" />
-    <attr name="md_widget_color" format="color" />
+    <attr name="md_positive_color" format="color"/>
+    <attr name="md_neutral_color" format="color"/>
+    <attr name="md_negative_color" format="color"/>
+    <attr name="md_widget_color" format="color"/>
 
-    <attr name="md_item_color" format="color" />
-    <attr name="md_divider_color" format="color" />
-    <attr name="md_list_selector" format="reference" />
+    <attr name="md_item_color" format="color"/>
+    <attr name="md_divider_color" format="color"/>
+    <attr name="md_list_selector" format="reference"/>
 
-    <attr name="md_btn_stacked_selector" format="reference" />
-    <attr name="md_btn_positive_selector" format="reference" />
-    <attr name="md_btn_neutral_selector" format="reference" />
-    <attr name="md_btn_negative_selector" format="reference" />
+    <attr name="md_btn_stacked_selector" format="reference"/>
+    <attr name="md_btn_positive_selector" format="reference"/>
+    <attr name="md_btn_neutral_selector" format="reference"/>
+    <attr name="md_btn_negative_selector" format="reference"/>
 
-    <attr name="md_btn_ripple_color" format="color" />
+    <attr name="md_btn_ripple_color" format="color"/>
 
     <attr name="md_title_gravity" format="enum">
-        <enum name="start" value="0" />
-        <enum name="center" value="1" />
-        <enum name="end" value="2" />
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
     </attr>
 
     <attr name="md_content_gravity" format="enum">
-        <enum name="start" value="0" />
-        <enum name="center" value="1" />
-        <enum name="end" value="2" />
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
     </attr>
 
     <attr name="md_btnstacked_gravity" format="enum">
-        <enum name="start" value="0" />
-        <enum name="center" value="1" />
-        <enum name="end" value="2" />
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
     </attr>
 
     <attr name="md_items_gravity" format="enum">
-        <enum name="start" value="0" />
-        <enum name="center" value="1" />
-        <enum name="end" value="2" />
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
     </attr>
 
     <attr name="md_buttons_gravity" format="enum">
-        <enum name="start" value="0" />
-        <enum name="center" value="1" />
-        <enum name="end" value="2" />
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
     </attr>
 
     <declare-styleable name="MDRootLayout">
-        <attr name="md_reduce_padding_no_title_no_buttons" format="boolean" />
+        <attr name="md_reduce_padding_no_title_no_buttons" format="boolean"/>
     </declare-styleable>
 
-    <attr name="md_medium_font" format="string" />
-    <attr name="md_regular_font" format="string" />
+    <attr name="md_medium_font" format="string"/>
+    <attr name="md_regular_font" format="string"/>
 
     <declare-styleable name="Preference">
-        <attr name="useStockLayout" format="boolean" />
+        <attr name="useStockLayout" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1"/>
+            <flag name="right" value="2"/>
+            <flag name="top" value="4"/>
+            <flag name="bottom" value="8"/>
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension"/>
+        <attr name="rightEdgeSwipeOffset" format="dimension"/>
+        <attr name="topEdgeSwipeOffset" format="dimension"/>
+        <attr name="bottomEdgeSwipeOffset" format="dimension"/>
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0"/>
+            <enum name="pull_out" value="1"/>
+        </attr>
+        <attr name="clickToClose" format="boolean"/>
+    </declare-styleable>
 
 </resources>

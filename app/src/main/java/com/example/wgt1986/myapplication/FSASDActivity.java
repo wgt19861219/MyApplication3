@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import com.example.wgt1986.myapplication.SwipeLayout.swipe.MyActivity;
 import com.example.wgt1986.myapplication.gridview.ui.GMainActivity;
 import com.example.wgt1986.myapplication.listview.activities.ListMainActivity;
 import com.example.wgt1986.myapplication.materialdialogs.MaterialdialogActivity;
@@ -20,6 +21,7 @@ public class FSASDActivity extends Activity {
     private Button btn5;
     private Button btn6;
     private Button btn7;
+    private Button btn8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class FSASDActivity extends Activity {
         btn5 = (Button) findViewById(R.id.button5);
         btn6 = (Button) findViewById(R.id.button6);
         btn7 = (Button) findViewById(R.id.button7);
+        btn8 = (Button) findViewById(R.id.button8);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,6 +78,12 @@ public class FSASDActivity extends Activity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(FSASDActivity.this, MaterialdialogActivity.class));
+            }
+        });
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FSASDActivity.this, MyActivity.class));
             }
         });
     }

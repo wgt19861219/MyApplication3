@@ -103,4 +103,5 @@
 
     <integer name="preference_fragment_scrollbarStyle">0x02000000</integer>
     <!-- outsideOverlay -->
+
 </resources>
