@@ -44,5 +44,8 @@
             android:id="@+id/action_clear_data"
             android:title="clear data"
             app:showAsAction="never"/>
+    <item
+            android:id="@+id/about"
+            android:title="@string/about" />
 
 </menu>

@@ -5,27 +5,31 @@
               android:layout_height="match_parent">
 
     <Button
-            android:text="Button1"
+            android:text="ExpandableGridView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/button"/>
     <Button
-            android:text="Button2"
+            android:text="FlowTagLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/button2"/>
     <Button
-            android:text="Button3"
+            android:text="FlowLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/button3"/>
     <Button
-            android:text="Button4"
+            android:text="ListFlowLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/button4"/>
     <Button
-            android:text="Button5"
+            android:text="ImageThumbnail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/button5"/>
     <Button
             android:text="Button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/button6"/>
+    <Button
+            android:text="material-dialogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button7"/>
 </LinearLayout>

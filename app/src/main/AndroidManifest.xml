@@ -24,6 +24,7 @@
         <activity android:name=".gridview.ui.GMainActivity" android:exported="true">
         </activity>
         <activity android:name=".SMainActivity"/>
+        <activity android:name=".materialdialogs.MaterialdialogActivity"/>
     </application>
 
 </manifest>

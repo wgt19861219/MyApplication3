@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="md_preference_content_inset">28dp</dimen>
+  <dimen name="sample_button_spacing">8dp</dimen>
+  <dimen name="headerTitle">24sp</dimen>
+  <dimen name="activity_horizontal_margin">32dp</dimen>
+  <dimen name="activity_vertical_margin">32dp</dimen>
+  <dimen name="headerMarginVertical">24dp</dimen>
+  <dimen name="headerMarginStart">16dp</dimen>
+
+</resources>
